@@ -1,0 +1,28 @@
+[run]
+; This is to combine all of the coverage files into one.
+parallel = True
+omit = 
+    ; Created by Open-CV. Throws errors.
+    config.py
+    config-3.py
+    # My API key
+    api_key.py
+
+[report]
+exclude_also =
+    ; Not looking at non-runnable code
+    if __name__ == .__main__.:
+    ; Not looking at initial calling of function.
+    def main():
+
+    ; Not testing for exceptions
+    raise AssertionError
+    raise NotImplementedError
+    except
+    ; Not testing for if user doesn't provide an output file
+    if output_file_path == "":
+    elif self.confirm_as_absolute_path(output_file_path) is False:
+    ; Not testing for if user declines to continue
+    if confirm != "y":
+
+ignore_errors = True
