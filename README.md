@@ -16,6 +16,10 @@
 
 With a directory full of movies, this script cleans up the title names and removes unneeded files. It attempts to do it automatically, if unsure, leaves item for user guidance at end of search.
 
+```PowerShell
+py refactor_movie_folder.py
+```
+
 The script handles the following:
 
 - Finds and adds year, if none.
