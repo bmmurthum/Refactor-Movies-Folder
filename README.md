@@ -2,15 +2,15 @@
 
 **Contents:**
 
-- [Important Notes](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#important-notes)
-- [Requirements](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#requirements)
-- [Example](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#example)
-- [Overview](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#overview)
-- [Tests](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#tests)
-  - [Unit Testing](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#unit-testing)
-  - [Code Coverage](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#code-coverage)
-- [Reflections](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#reflections)
-- [Work Log](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?#work-log)
+- [Important Notes](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#important-notes)
+- [Requirements](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#requirements)
+- [Example](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#example)
+- [Overview](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#overview)
+- [Tests](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#tests)
+  - [Unit Testing](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#unit-testing)
+  - [Code Coverage](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#code-coverage)
+- [Reflections](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#reflections)
+- [Work Log](https://github.com/bmmurthum/Refactor-Movies-Folder/tree/main?tab=readme-ov-file#work-log)
 
 **Description:**
 
