@@ -443,8 +443,9 @@ class RefactorMovieFolder:
         # Fix path string if in Window's format
         if output_file_path == "___":
             output_file_path = ""
-        output_file_path = self.fix_initial_path_string(output_file_path)
-        output_file_path = output_file_path[:-1]
+        else:
+            output_file_path = self.fix_initial_path_string(output_file_path)
+            output_file_path = output_file_path[:-1]
         if output_file_path == "":
             print("There is no given output file.")
             confirm = input("Continue? y/n: ")
@@ -530,10 +531,12 @@ class RefactorMovieFolder:
                             )
                             success = True
                         except requests.exceptions.ReadTimeout:
-                            print("Error: READTIMEOUT")
+                            # print("Error: READTIMEOUT")
+                            print("  ..")
                             sleep(2)
                         except Exception as inst:
-                            print(type(inst))
+                            # print(type(inst))
+                            print("  ..")
                             sleep(2)
                 new_file_name = self.clean_file_name(new_file_name)
             else:
@@ -578,15 +581,17 @@ class RefactorMovieFolder:
             with open(output_file_path, mode="a", encoding="utf-8") as o:
                 o.write("\n")
                 o.write("List of items that weren't confirmed: " + "\n\n")
-            directories = os.scandir(path)
-            for entry in directories:
-                i = old_list.index(entry.name)
-                total_count += 1
-                if new_list[i] == "NOT FOUND" and runtime_list[i] > 20:
-                    count += 1
+        directories = os.scandir(path)
+        for entry in directories:
+            i = old_list.index(entry.name)
+            total_count += 1
+            if new_list[i] == "NOT FOUND" and runtime_list[i] > 20:
+                count += 1
+                if output_file_path != "":
                     with open(output_file_path, mode="a", encoding="utf-8") as o:
                         o.write("  Old File: " + old_list[i] + "\n")
-            # Write a list of invalid files.
+        # Write a list of invalid files.
+        if output_file_path != "":
             with open(output_file_path, mode="a", encoding="utf-8") as o:
                 o.write("\n")
                 o.write("List of items that are invalid (to delete): " + "\n\n")
